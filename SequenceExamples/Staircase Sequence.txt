@@ -1,0 +1,22 @@
+Name=Staircase
+Height=4
+MinPlayers=-1
+MaxPlayers=20
+
+Sequence:
+MultiDrop=[0, 4, 8, 12, 3, 7, 11, 15, 13, 14, 9, 10, 5, 6], 1.5
+Wait=1
+MultiDrop=[0, 4, 8, 12, 3, 7, 11, 15, 13, 14, 9, 10], 1.5
+Wait=1
+MultiDrop=[0, 4, 8, 12, 3, 7, 11, 15, 13, 14], 1.5
+Wait=1
+MultiDrop=[0, 4, 8, 12, 3, 7, 11, 15], 1.5
+Wait=7
+
+MultiDrop=[1, 2], 1
+Wait=0.5
+MultiDrop=[1, 2, 5, 6], 1
+Wait=0.5
+MultiDrop=[1, 2, 5, 6, 9, 10], 1
+Wait=0.5
+MultiDrop=[1, 2, 5, 6, 9, 10, 13, 14], 1

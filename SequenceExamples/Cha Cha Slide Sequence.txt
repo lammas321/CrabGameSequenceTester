@@ -1,0 +1,32 @@
+Name=Cha Cha Slide
+Height=4
+MinPlayers=4
+MaxPlayers=-1
+
+Sequence:
+#Slide to the left,
+MultiDrop=[0, 4, 8, 12], 1
+Wait=2
+MultiDrop=[1, 5, 9, 13], 1
+Wait=2
+MultiDrop=[2, 6, 10, 14], 1
+Wait=2
+MultiDrop=[3, 7, 11, 15], 1
+Wait=2
+
+#slide to the right
+MultiDrop=[3, 7, 11, 15], 1
+Wait=2
+MultiDrop=[2, 6, 10, 14], 1
+Wait=2
+MultiDrop=[1, 5, 9, 13], 1
+Wait=2
+MultiDrop=[0, 4, 8, 12], 1
+Wait=2
+
+#Criscross x2
+MultiDrop=[1, 2, 7, 11, 14, 13, 8, 4], 1
+Wait=2
+MultiDrop=[0, 3, 15, 12, 5, 6, 10, 9], 1, 2, 2
+Wait=2
+MultiDrop=[1, 2, 7, 11, 14, 13, 8, 4], 1

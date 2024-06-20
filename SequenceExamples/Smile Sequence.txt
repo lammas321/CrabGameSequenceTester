@@ -1,0 +1,9 @@
+Name=Smile! :)
+Height=1
+MinPlayers=7
+MaxPlayers=-1
+
+Sequence:
+MultiDrop=[0, 3, 8, 11, 13, 14], 1
+Wait=5
+MultiDrop=[1, 2, 4, 5, 6, 7, 9, 10, 12, 15], 1
