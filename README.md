@@ -24,20 +24,29 @@ After the "Sequence:" line is where sequence is played out, there are currently 
 
 ## Drop
 Drop=<dropPosition: int>, <dropTime: float>
+
 The Drop instruction takes in a position and a time to drop.
+
 The position ranges from 0-15 (inclusive) with 0 starting in the top left corner and going right then down.
+
 The drop time is roughly how long the drop will take to reach the floor. Anything you enter multiplied by about 4 is how long it'll take to reach the bottom in seconds (roughly 1/4 being growing in size, and the other 3/4 being frozen for a short time and falling).
 
 ## MultiDrop
 MultiDrop=<dropPositions: int[]>, <dropTime: float>, [dropCount: int = 1], [waitTime: float = 1f]
+
 The MultiDrop instruction takes in multiple positions and a drop time, as well as an option drop count (default 1) and an option wait time between drops (default 1).
+
 The positions work the same as the Drop instruction's postion, except everything in the array will drop at the same time.
+
 The drop time works the same as the Drop instruction's drop time.
+
 The drop count will drop blocks at all drop positions that many times with a delay of wait time between them.
+
 The wait time is how long to wait in seconds between repeated drops when drop count is larger than 1.
 
 ## Wait
 Wait=<waitTime: float>
+
 The Wait instruction takes in a wait time, which is how long in seconds to wait before executing the next instruction.
 
 
