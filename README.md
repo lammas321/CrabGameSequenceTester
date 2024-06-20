@@ -13,8 +13,11 @@ If the blocks start getting too high, you can use "!res" (restart) to restart th
 Sequences use a semi-custom format to decide how they will function. The first few lines (before the "Sequence:" line) act as a header, describing some information about the sequence, such as its name, how many layers up it goes, its min supported players, and its max supported players.
 
 The name can be anything you like (as long as it only uses ASCII characters, as those are the only characters that can properly appear in chat).
+
 The sequence's height should be the exact about of layers it ends up using, it being too high or low can cause the game to end too soon or late.
+
 The min supported players allows you to prevent the sequence from being played with a low number of players, useful if the sequence is generally easy and has lots of room. Set to -1 to have no minimum.
+
 The max supported players allows you to prevent the sequence from being player with a high number of players, useful if the sequence is more difficult or doesn't have lots of room. Set to -1 to have no maximum.
 
 After the "Sequence:" line is where sequence is played out, there are currently 3 instructions:
